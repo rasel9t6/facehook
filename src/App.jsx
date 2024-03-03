@@ -1,4 +1,3 @@
-import './App.css';
 import HomePage from './pages/HomePage';
 import { Route, Routes } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
@@ -23,7 +22,7 @@ function App() {
           element={<ProfilePage />}
         />
         <Route
-          path='/registration'
+          path='/register'
           element={<RegistrationPage />}
         />
         <Route

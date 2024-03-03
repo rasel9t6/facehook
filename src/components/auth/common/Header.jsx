@@ -1,17 +1,20 @@
+import { Link } from 'react-router-dom';
+import Logout from '../Logout';
+
 export default function Header() {
   return (
     <nav className='sticky top-0 z-50 border-b border-[#3F3F3F] bg-[#1E1F24] py-4'>
       <div className='container flex flex-col items-center justify-between gap-6 sm:flex-row'>
-        <a href='./index.html'>
+        <Link t0='/'>
           <img
             className='max-w-[100px] rounded-full lg:max-w-[130px]'
             src='./assets/images/logo.svg'
           />
-        </a>
+        </Link>
 
         <div className='flex items-center space-x-4'>
-          <a
-            href='./index.html'
+          <Link
+            to='/'
             className='btn-primary'
           >
             <img
@@ -19,19 +22,14 @@ export default function Header() {
               alt='Home'
             />
             Home
-          </a>
+          </Link>
           <button className='icon-btn'>
             <img
               src='./assets/icons/notification.svg'
               alt='Notification'
             />
           </button>
-          <button className='icon-btn'>
-            <img
-              src='./assets/icons/logout.svg'
-              alt='Logout'
-            />
-          </button>
+          <Logout />
 
           <button className='flex-center !ml-8 gap-3'>
             <span className='text-lg font-medium lg:text-xl'>Sumit</span>
