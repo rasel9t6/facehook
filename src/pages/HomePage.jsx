@@ -1,9 +1,6 @@
-import Header from '../components/auth/common/Header';
-
 export default function HomePage() {
   return (
     <>
-      <Header />
       <main className='mx-auto max-w-[1020px] py-8'>
         <div className='container'>
           <div className='card'>
